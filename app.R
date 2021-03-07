@@ -20,6 +20,7 @@ for (yr in unique(data$Year)){
 }
 colnames(plotdata) = labelling
 plotdata
+Years = colnames(plotdata)[-1]
 
 YearSelector = div(
     selectInput(
